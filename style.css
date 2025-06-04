@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #49bafe;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 500px;
+    background-color: #d7dfa6;
+    padding: 4rem 4px;
+
+}
+
+h1{
+    font-size: 45px;
+    color:#503e3d ;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+button{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #1d6b9c;
+    color: white;
+    border: none;
+    overflow: hidden;
+   
+}
+
+button:hover::after {
+    content: "";
+    position: absolute;
+    background: white; 
+    animation: moveLine 2s linear infinite;
+}
+
+
+
+@keyframes moveLine {
+    0%   { top: 0; left: 0; width: 30px; height: 4px; } /* Levý horní roh */
+    25%  { top: 0; left:98%; width: 30px; height:4px; } /* Pravý horní roh */
+    80%  { top: 100%; left: 98%; width: 30px; height: 4px; } /* Pravý spodní roh */
+    95%  { top: 90%; left: -9%; width: 20px; height: 4px; } /* Levý spodní roh */
+    100% { top: 0; left: 0; width: 2px; height: 4px; }
+}
+
