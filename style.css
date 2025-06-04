@@ -27,7 +27,13 @@ h1{
     font-size: 45px;
     color:#503e3d ;
     text-align: center;
-    margin-bottom: 35px;
+}
+
+.joke{
+    margin: 35px 0;
+    font-size: 22px;
+    text-align: center;
+    color: black;
 }
 
 button{
@@ -48,7 +54,7 @@ button:hover::after {
     content: "";
     position: absolute;
     background: white; 
-    animation: moveLine 2s linear infinite;
+    animation: moveLine 2s linear forwards;
 }
 
 
@@ -58,6 +64,6 @@ button:hover::after {
     25%  { top: 0; left:98%; width: 30px; height:4px; } /* Pravý horní roh */
     80%  { top: 100%; left: 98%; width: 30px; height: 4px; } /* Pravý spodní roh */
     95%  { top: 90%; left: -9%; width: 20px; height: 4px; } /* Levý spodní roh */
-    100% { top: 0; left: 0; width: 2px; height: 4px; }
+    100% { top: -15%; left: 0; width: 2px; height: 4px; }
 }
 
